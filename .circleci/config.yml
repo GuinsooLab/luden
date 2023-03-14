@@ -1,0 +1,95 @@
+version: 2.1
+
+jobs:
+  lint:
+    docker:
+      - image: circleci/golang:1.16
+    working_directory: /go/src/github.com/jitsucom/jitsu
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - go-mod-v1-global-{{ checksum "./go.sum" }}
+      - run: go get -u golang.org/x/lint/golint
+      - run: golint ./...
+      # uncomment it for stopping build on golint error
+      # - run: golint -set_exit_status=true ./...
+      - save_cache:
+          key: go-mod-v1-global-{{ checksum "./go.sum" }}
+          paths:
+            - "/go/pkg/mod"
+  server-test:
+    working_directory: /go/src/github.com/jitsucom/jitsu/server
+    docker:
+      - image: circleci/golang:1.16
+      - image: yandex/clickhouse-server:20.3
+      - image: circleci/postgres:12
+        environment:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: test
+      - image: circleci/redis
+      - image: circleci/mysql:8.0.25
+        environment:
+          MYSQL_ROOT_PASSWORD: test_root_password
+          MYSQL_USER: test_user
+          MYSQL_PASSWORD: test_password
+          MYSQL_DATABASE: test_database
+    environment:
+      PG_TEST_PORT: 5432
+      CH_TEST_PORT: 8123
+      REDIS_TEST_PORT: 6379
+      MYSQL_TEST_PORT: 3306
+      TEST_RESULTS: /tmp/test-results
+      GO111MODULE: "on"
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 19.03.13
+      - restore_cache:
+          keys:
+            - go-mod-v1-{{ checksum "./server/go.sum" }}
+      - run: mkdir -p $TEST_RESULTS
+      - run: go get github.com/jstemmer/go-junit-report
+      - run:
+          name: Waiting for Redis to be ready
+          command: |
+            for i in `seq 1 10`;
+            do
+              nc -z localhost 6379 && echo Success && exit 0
+              echo -n .
+              sleep 1
+            done
+            echo Failed waiting for Redis && exit 1
+      - run:
+          name: Run unit tests
+          command: |
+            trap "go-junit-report <${TEST_RESULTS}/go-test.out > ${TEST_RESULTS}/go-test-report.xml" EXIT
+            cd server && make test_backend | tee ${TEST_RESULTS}/go-test.out
+      - store_test_results:
+          path: /tmp/test-results
+      - run: go mod download
+      - save_cache:
+          key: go-mod-v1-{{ checksum "./server/go.sum" }}
+          paths:
+            - "/go/pkg/mod"
+
+workflows:
+  version: 2.1
+  build-docker:
+    jobs:
+      - lint:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: /.*/
+      - server-test:
+          context: jitsu
+          requires:
+            - lint
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: /.*/
