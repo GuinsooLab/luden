@@ -188,7 +188,7 @@ export default function SetupForm() {
                     size="large"
                   />
                   <Button htmlType="submit" type="primary" size="large" loading={loading}>
-                    Set up Jitsu
+                    Set up Luden
                   </Button>
                   <TermsSwitch name="product-updates" onChange={val => setEmailOptout(!val)}>
                     Send me occasional product updates. You may unsubscribe at any time.

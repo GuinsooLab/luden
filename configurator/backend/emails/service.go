@@ -39,7 +39,7 @@ func (sc *SMTPConfiguration) Validate() error {
 	}
 
 	if sc.Signature == "" {
-		sc.Signature = "Your Jitsu - an open-source data collection platform team"
+		sc.Signature = "Your Luden - an open-source data collection platform team"
 	}
 
 	return nil

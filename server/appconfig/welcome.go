@@ -54,8 +54,8 @@ func logWelcomeBanner(version string) {
 
 	styler := lipgloss.NewStyle().Width(80).Align(lipgloss.Center)
 
-	welcome := styler.Render(fmt.Sprintf("Welcome to Jitsu Server %s!", version))
-	description := styler.Render("🚀 Jitsu is an open-source data collection platform")
+	welcome := styler.Render(fmt.Sprintf("Welcome to Luden Server %s!", version))
+	description := styler.Render("🚀 Luden is an open-source data collection platform")
 
 	lists := lipgloss.JoinHorizontal(lipgloss.Top,
 		list.Render(
@@ -63,17 +63,17 @@ func logWelcomeBanner(version string) {
 				listHeader("📚 Documentation:"),
 				listHeader("🌎 Website:"),
 				listHeader("🌟 Github:"),
-				listHeader("💪 Follow us on twitter:"),
+				listHeader("💪 Follow us on GuinsooLab:"),
 				listHeader("💬 Join our Slack:"),
 			),
 		),
 		list.Copy().Width(columnWidth).Border(lipgloss.NormalBorder(), false, false, false, false).Render(
 			lipgloss.JoinVertical(lipgloss.Left,
-				listHeader("https://jitsu.com/docs"),
-				listHeader("https://jitsu.com"),
-				listHeader("https://github.com/jitsucom/jitsu"),
-				listHeader("https://twitter.com/jitsucom"),
-				listHeader("https://jitsu.com/slack"),
+				listHeader("https://ciusji.gitbook.io/luden/"),
+				listHeader("https://ciusji.gitbook.io/luden/"),
+				listHeader("https://github.com/GuinsooLab/luden"),
+				listHeader("https://github.com/GuinsooLab"),
+				listHeader("https://guinsoolab.slack.com"),
 			),
 		),
 	)
@@ -83,7 +83,6 @@ func logWelcomeBanner(version string) {
 	dialog := lipgloss.Place(width, 17,
 		lipgloss.Center, lipgloss.Center,
 		dialogBoxStyle.Render(ui),
-		//lipgloss.WithWhitespaceChars("柔术"),
 		lipgloss.WithWhitespaceForeground(subtle),
 	)
 

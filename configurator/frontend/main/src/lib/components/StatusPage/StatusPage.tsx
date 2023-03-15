@@ -327,15 +327,15 @@ const StatisticsError = () => {
   return (
     <div>
       <h3>Chart cannot be displayed</h3>
-      Connection to Jitsu server cannot be established. That's not a critical error, you still will be able to configure
-      Jitsu. However, statistic and monitoring for Jitsu Nodes won't be available. To fix that:
+      Connection to Luden server cannot be established. That's not a critical error, you still will be able to configure
+      Luden. However, statistic and monitoring for Luden Nodes won't be available. To fix that:
       <ul className="mt-5">
         <li>
-          Make sure that <CodeInline>jitsu.base_url</CodeInline> property is set in Jitsu Configurator yaml file
+          Make sure that <CodeInline>luden.base_url</CodeInline> property is set in Luden Configurator yaml file
         </li>
         <li>
-          If <CodeInline>jitsu.base_url</CodeInline> is set, make sure that this URL is accessible (not blocked by
-          firewall) from Jitsu Configurator
+          If <CodeInline>luden.base_url</CodeInline> is set, make sure that this URL is accessible (not blocked by
+          firewall) from Luden Configurator
         </li>
       </ul>
     </div>

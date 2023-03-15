@@ -62,7 +62,7 @@ export const OnboardingTourReceiveEvent: React.FC<Props> = function ({ handleGoN
       <span className={styles.spinnerContainer}>
         <Spin size="large" />
       </span>
-      <p className={styles.paragraph}>{`Waiting for the events to get registered in Jitsu`}</p>
+      <p className={styles.paragraph}>{`Waiting for the events to get registered in Luden`}</p>
       <div className={styles.controlsContainer}>
         <Button type="ghost" size="large" className={styles.withButtonsMargins} onClick={handleClickGoBack}>
           {"Back to Instructions"}

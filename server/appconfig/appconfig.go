@@ -306,7 +306,7 @@ func Init(containerized bool, dockerHubID string) error {
 		logging.Infof("📂 Using server.log.path directory: %q", globalLoggerConfig.FileDir)
 	}
 
-	logging.Infof("🚀 Starting Jitsu Server. Server name: %s", serverName)
+	logging.Infof("🚀 Starting Luden Server. Server name: %s", serverName)
 	publicURL := viper.GetString("server.public_url")
 	if publicURL == "" {
 		logging.Info("💻 Server public url will be taken from Host header")

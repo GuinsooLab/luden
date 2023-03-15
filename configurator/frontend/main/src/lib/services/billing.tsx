@@ -276,7 +276,7 @@ export async function getCurrentSubscription(
       "success"
     )
   } catch (e) {
-    console.info("Failed to obtain stat, it could happen if Jitsu configurator isn't connected to jitsu server", e)
+    console.info("Failed to obtain stat, it could happen if Luden configurator isn't connected to jitsu server", e)
     stat = []
   }
 

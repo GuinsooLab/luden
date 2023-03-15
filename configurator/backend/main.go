@@ -89,7 +89,7 @@ func main() {
 	// Setup application directory as working directory
 	setAppWorkDir()
 
-	if err := config.Read(*configSource, *containerizedRun, "", "Jitsu Configurator"); err != nil {
+	if err := config.Read(*configSource, *containerizedRun, "", "Luden Configurator"); err != nil {
 		logging.Fatal("Error while reading application config:", err)
 	}
 
