@@ -1,7 +1,8 @@
 server:
   allowed_domains:
     - 'localhost'
-  name: jitsu
+  name: Luden
+  port: 7007
   auth: 'demo___please_provide_value_in_production___'
 
 storage:

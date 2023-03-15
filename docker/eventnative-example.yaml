@@ -1,6 +1,6 @@
 server:
-  name: jitsu
-  port: '${env.SERVER_PORT|8001}'
+  name: Luden
+  port: 8001
   disable_welcome_page: true
   strict_auth_tokens: true
   admin_token: 'demo___please_provide_value_in_production___'
@@ -18,7 +18,7 @@ geo:
   maxmind_path: '${env.MAX_MIND_PATH|}'
 
 configurator:
-  base_url: 'http://localhost:7000'
+  base_url: 'http://localhost:7007'
   admin_token: 'demo___please_provide_value_in_production___'
 
 geo_resolvers: '${env.GEO_RESOLVERS_URL|}'
