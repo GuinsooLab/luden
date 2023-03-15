@@ -252,7 +252,7 @@ function GeoDataResolver() {
     <div className="flex justify-center w-full">
       <div className="w-full pt-8 px-4" style={{ maxWidth: "1000px" }}>
         <p>
-          Jitsu uses{" "}
+          Luden uses{" "}
           <a target="_blank" href="https://www.maxmind.com/">
             MaxMind
           </a>{" "}

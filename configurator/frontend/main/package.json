@@ -1,5 +1,5 @@
 {
-  "name": "jitsu-configurator-ui",
+  "name": "luden-configurator-ui",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -79,7 +79,7 @@
   "scripts": {
     "clean": "rm -rf build dist",
     "compile": "tsc -p . --noEmit",
-    "dev": "pnpm build:openapi && pnpm compile && NODE_ENV=development craco start",
+    "dev": "pnpm build:openapi && pnpm compile && NODE_ENV=development BACKEND_API_BASE=http://localhost:7000 craco start",
     "build": "pnpm build:openapi && pnpm version:update && NODE_ENV=production craco build",
     "build:openapi": "openapi -i ../../../openapi/configurator.yaml -o src/generated/conf-openapi --exportCore false  --exportServices false  --exportModels true\n",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}' --ignore-pattern **/node_modules/",

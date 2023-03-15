@@ -21,6 +21,7 @@ import Icon, {
   UserSwitchOutlined,
 } from "@ant-design/icons"
 import { ReactComponent as JitsuLogo } from "icons/logo-responsive.svg"
+import { ReactComponent as JitsuLogoSquare } from "icons/logo-square.svg"
 import { ReactComponent as Cross } from "icons/cross.svg"
 import { ReactComponent as DbtCloudIcon } from "icons/dbtCloud.svg"
 import { ReactComponent as KeyIcon } from "icons/key.svg"
@@ -144,8 +145,10 @@ export const ApplicationSidebar: React.FC<{}> = () => {
     <div className={`relative ${styles.sideBarContent}`}>
       <div className="flex flex-col items-stretch h-full">
         <div className={`pb-3 ${styles.sideBarContent_item__withRightBorder} app-logo-wrapper`}>
-          <NavLink to="/" className={`text-center block pt-5 h-14 overflow-hidden ${expanded ? "" : "w-12 pl-3"}`}>
-            <JitsuLogo className={`h-8 w-40`} />
+          <NavLink to="/" className={`text-center block pt-5 h-14 overflow-hidden ${expanded ? "" : ""}`}>
+            {expanded ?
+                <JitsuLogo className={`h-8 w-40`} /> : <JitsuLogoSquare width={32} height={32} />
+            }
           </NavLink>
         </div>
         <div className={`flex-grow flex-shrink min-h-0 ${styles.sideBarContent_item__withRightBorder}`}>
@@ -347,7 +350,7 @@ export const SlackChatWidget: React.FC<{}> = () => {
 
   const handleJoinPublicChannel = React.useCallback(() => {
     services.analyticsService.track("support_slack_public")
-    window.open("https://jitsu.com/slack", "_blank")
+    window.open("https://guinsoolab.slack.com/", "_blank")
   }, [])
 
   const handleJoinPrivateChannel = React.useCallback(async () => {

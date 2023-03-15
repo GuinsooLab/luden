@@ -97,10 +97,10 @@ export function LoginForm({ supportOauth, ssoAuthLink }) {
         close={() => setShowPasswordResetForm(false)}
         onSuccess={() => message.info("Password reset e-mail has been sent!")}
       />
-      <h1 className="text-center text-textPale font-heading font-bold tracking-wider mb-4 mt-12">Log in to Jitsu</h1>
+      <h1 className="text-center text-textPale font-heading font-bold tracking-wider mb-4 mt-12">Log in to Luden</h1>
       {supportOauth && (
         <div className="block lg:hidden mt-6 text-center mb-6 font-bold">
-          New to Jitsu? <a onClick={() => history.push("/signup")}>Sign up</a>
+          New to Luden? <a onClick={() => history.push("/signup")}>Sign up</a>
         </div>
       )}
       <Form

@@ -20,7 +20,7 @@ const (
 	configuratorURLKey     = "__JITSU_CONFIGURATOR_URL__"
 )
 
-var signaturePage = `<html><head><title>Jitsu edge server ver [VERSION]</title></head><body><pre><small><b>Jitsu edge server ver [VERSION]. <a href="[CONFIGURATOR_URL]">Configure Jitsu</a></b></small></pre></body></html>`
+var signaturePage = `<html><head><title>Luden edge server ver [VERSION]</title></head><body><pre><small><b>Jitsu edge server ver [VERSION]. <a href="[CONFIGURATOR_URL]">Configure Jitsu</a></b></small></pre></body></html>`
 var blankPage = `<html><head></head><body></body></html>`
 
 //RootPathHandler serves:

@@ -89,7 +89,7 @@ export const UserSettingsViewComponent: React.FC<Props> = ({
             <span>
               Only cluster admin can change user email. <br />
               See{" "}
-              <a target="_blank" href="https://jitsu.com/configurator-openapi.html#operation/User%20email%20change">
+              <a target="_blank" href="https://ciusji.gitbook.io/luden/extending/api-specs">
                 API docs
               </a>{" "}
               for more information.

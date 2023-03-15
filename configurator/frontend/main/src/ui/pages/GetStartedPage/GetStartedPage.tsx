@@ -49,7 +49,7 @@ function WelcomeBackHero({ signupEnabled }) {
       <h1 className="text-center text-textPale font-heading font-bold tracking-wider">Welcome back!</h1>
       {signupEnabled && (
         <div className="mt-6">
-          New to Jitsu?{" "}
+          New to Luden?{" "}
           <a className={`text-textPale font-bold ${styles.heroLink}`} onClick={() => history.push("/signup")}>
             Sign up
           </a>
@@ -62,10 +62,10 @@ function WelcomeBackHero({ signupEnabled }) {
 function JitsuCloudHero() {
   return (
     <>
-      <h1 className="text-center lg:text-left text-textPale font-heading font-bold tracking-wider">Try Jitsu.Cloud</h1>
+      <h1 className="text-center lg:text-left text-textPale font-heading font-bold tracking-wider">Try Luden.Cloud</h1>
       <div>
         <div className="mt-6">
-          Jitsu.Cloud is a hosted version of our open-source project. Start collecting data in as little as 2 minutes
+          Luden.Cloud is a hosted version of our open-source project. Start collecting data in as little as 2 minutes
         </div>
         <div className="mt-6">
           <ul className={`list-inside list-none ${styles.featureList}`}>
@@ -80,15 +80,15 @@ function JitsuCloudHero() {
               Use your own tracking domain (<b className={`${styles.underline} font-monospace`}>track.myapp.com</b>)
             </li>
             <li>
-              Community support via Jitsu Public Slack (
-              <a target="_blank" href="https://jitsu.com/slack" className={styles.heroLink}>
+              Community support via Luden Public Slack (
+              <a target="_blank" href="https://guinsoolab.slack.com" className={styles.heroLink}>
                 join now!
               </a>
               )
             </li>
             <li>
               See all{" "}
-              <a target="_blank" href="https://jitsu.com/pricing" className={styles.heroLink}>
+              <a target="_blank" href="https://guinsoolab.github.io/glab" className={styles.heroLink}>
                 pricing options
               </a>
             </li>
@@ -99,14 +99,14 @@ function JitsuCloudHero() {
         </h2>
         <a
           target="_blank"
-          href="https://jitsu.com/docs/deployment"
+          href="https://ciusji.gitbook.io/luden/quickstart/"
           className="text-text hover:text-text flex flex-row items-center"
         >
           <div className="text-text pr-4">
             <GitHubLogo />
           </div>
           <div>
-            Deploy Jitsu on your own infrastructure in <b className={styles.underline}>2 minutes</b>. Free forever!
+            Deploy Luden on your own infrastructure in <b className={styles.underline}>2 minutes</b>. Free forever!
           </div>
         </a>
       </div>
@@ -130,7 +130,7 @@ export default function GetStartedPage(props: GetStartedPageProps) {
           props.login && "hidden"
         } lg:block bg-gradient-to-br to-success from-primaryHover md:w-full lg:w-1/2 min-h-screen order-last lg:order-first`}
       >
-        <a target="_blank" href="https://jitsu.com" className="hidden lg:block">
+        <a target="_blank" href="https://ciusji.gitbook.io/luden/" className="hidden lg:block">
           <img className="mt-12 ml-12 h-8" src={logo} />
         </a>
         <div className={`flex justify-around ${styles.hero}`}>
@@ -146,7 +146,7 @@ export default function GetStartedPage(props: GetStartedPageProps) {
         </div>
       </div>
       <div className="flex flex-col items-center lg:pt-36 ml-auto mr-auto pr-2 pl-2 pb-12">
-        <a target="_blank" href="https://jitsu.com" className="block mb-6 lg:hidden">
+        <a target="_blank" href="https://ciusji.gitbook.io/luden/" className="block mb-6 lg:hidden">
           <img className="mt-8 h-8" src={logo} />
         </a>
         {props.login ? <LoginForm supportOauth={props.oauthSupport} ssoAuthLink={props.ssoAuthLink} /> : <SignupForm />}

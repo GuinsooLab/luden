@@ -29,7 +29,7 @@ const icon = (
 const facebookDestination: Destination = {
   description: (
     <>
-      Jitsu can send events from JS SDK or Events API to Facebook Marketing API. The common use-case is to send
+      Luden can send events from JS SDK or Events API to Facebook Marketing API. The common use-case is to send
       conversions or/and page views to Facebook to use that data for targeting and ad optimization
     </>
   ),

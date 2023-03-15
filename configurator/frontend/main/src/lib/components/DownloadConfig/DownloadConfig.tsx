@@ -43,17 +43,17 @@ class DownloadConfig extends LoadableComponent<{}, State> {
       <>
         <div className="download-config-documentation">
           If you want to host your own instance of{" "}
-          <a target="_blank" href="https://github.com/jitsucom/jitsu">
-            Jitsu Server
+          <a target="_blank" href="https://github.com/GuinsooLab/luden">
+            Luden Server
           </a>{" "}
           you can use this configuration file. Note: although it includes all your keys, destinations, sources you
           should add your{" "}
-          <a target="_blank" href="https://jitsu.com/docs/configuration">
+          <a target="_blank" href="https://ciusji.gitbook.io/luden/configuration/">
             meta.storage (Redis) configuration
           </a>{" "}
           by yourself.{" "}
-          <a target="_blank" href="https://jitsu.com/docs/deployment">
-            Jitsu can be deployed just in a few clicks!
+          <a target="_blank" href="https://ciusji.gitbook.io/luden/quickstart/">
+            Luden can be deployed just in a few clicks!
           </a>
         </div>
         <CodeSnippet

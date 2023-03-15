@@ -72,11 +72,11 @@ export const SupportOptions = forwardRef<HTMLDivElement, Props>(
                 type="primary"
                 size="large"
                 icon={<Icon component={MailIcon} className={`transform translate-y-px`} />}
-                copyText="support@jitsu.com"
+                copyText="guinsoolab@gmail.com"
                 className="w-full"
                 onAfterCopy={onEmailCopyClick}
               >
-                support@jitsu.com
+                guinsoolab@gmail.com
               </CopyToClipboardButton>
             </div>
           )}

@@ -82,7 +82,7 @@ const NoDataFlowing: React.FC<{ showAPIKeyHint: boolean }> = ({ showAPIKeyHint }
             </li>
           )}
           <li>
-            Use one of the following libraries and APIs to send events to Jitsu
+            Use one of the following libraries and APIs to send events to Luden
             <div className="flex flex-row justify-center flex-wrap items-center pt-6">
               {Object.values(jitsuClientLibraries).map(props => (
                 <div className="mx-3 my-4" key={props.name}>

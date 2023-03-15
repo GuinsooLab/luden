@@ -16,7 +16,7 @@ const icon = logos.bento
 const bentoDestination: Destination = {
   description: (
     <>
-      Jitsu can send events from JS SDK or Events API to Bento API filling as much Bento Events Properties as possible
+      Luden can send events from JS SDK or Events API to Bento API filling as much Bento Events Properties as possible
       from original event data.
     </>
   ),
@@ -59,7 +59,7 @@ const bentoDestination: Destination = {
       type: descriptionType,
       defaultValue: (
         <span>
-          Jitsu can send events from JS SDK or Events API to Bento API filling as much Bento Events Properties as
+          Luden can send events from JS SDK or Events API to Bento API filling as much Bento Events Properties as
           possible from original event data.
         </span>
       ),

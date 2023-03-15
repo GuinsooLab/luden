@@ -26,7 +26,7 @@ const icon = (
 const hubspotDestination: Destination = {
   description: (
     <>
-      Jitsu can send events from JS SDK or Events API to{" "}
+      Luden can send events from JS SDK or Events API to{" "}
       <a target="_blank" href="https://developers.hubspot.com/docs/api/overview">
         HubSpot
       </a>

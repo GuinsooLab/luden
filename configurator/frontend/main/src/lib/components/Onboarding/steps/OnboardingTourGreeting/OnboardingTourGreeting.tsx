@@ -41,7 +41,7 @@ export const OnboardingTourGreeting: React.FC<Props> = function ({ amountOfSteps
 
   return (
     <div className={styles.mainContainer}>
-      <h1 className={styles.header}>{"👋 Welcome to Jitsu!\n"}</h1>
+      <h1 className={styles.header}>{"👋 Welcome to Luden!\n"}</h1>
       <p className={styles.paragraph}>
         {`Use this guide to configure your project in${numAmountToString(amountOfSteps)}.`}
       </p>

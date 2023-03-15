@@ -27,4 +27,4 @@ server/venv
 configurator/backend/openapi/*
 
 configurator/build/*
-server/venv
+yarn.log

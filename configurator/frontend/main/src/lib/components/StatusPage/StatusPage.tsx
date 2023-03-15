@@ -157,8 +157,8 @@ export const StatusPage: React.FC<Props> = ({ entityType, entityId, editEntityRo
       {isSelfHosted && isGeneralStatsPage && (
         <Row>
           <span className={`text-secondaryText mb-4`}>
-            Jitsu 1.37 brought an update that enables for serving more fine-grained statistics data. The new charts will
-            not show the events processed by the previous versions of Jitsu.
+            Luden 1.37 brought an update that enables for serving more fine-grained statistics data. The new charts will
+            not show the events processed by the previous versions of Luden.
           </span>
         </Row>
       )}

@@ -59,7 +59,7 @@ const ApiKeysComponent: React.FC = () => {
     <>
       <div className="flex flex-row mb-5 items-start justify between">
         <div className="flex-grow flex text-secondaryText">
-          Jitsu supports many{" "}
+          Luden supports many{" "}
           <Popover
             trigger="click"
             placement="bottom"
@@ -197,7 +197,7 @@ export const KeyDocumentation: React.FC<KeyDocumentationProps> = function ({ tok
         <p className="api-keys-documentation-tab-description">
           Easiest way to start tracking events within your web app is to add following snippet to{" "}
           <CodeInline>&lt;head&gt;</CodeInline> section of your html file.{" "}
-          <a target="_blank" href="https://jitsu.com/docs/sending-data/js-sdk/">
+          <a target="_blank" href="https://ciusji.gitbook.io/luden/sending-data/js-sdk">
             Read more
           </a>{" "}
           about JavaScript integration on our documentation website

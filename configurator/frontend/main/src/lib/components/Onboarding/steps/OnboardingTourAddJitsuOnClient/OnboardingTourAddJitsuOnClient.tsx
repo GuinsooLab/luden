@@ -60,7 +60,7 @@ export const OnboardingTourAddJitsuOnClient: React.FC<Props> = observer(({ handl
 
   return (
     <div className={styles.mainContainer}>
-      <h1 className={styles.header}>{"🖥 Add Jitsu on Client"}</h1>
+      <h1 className={styles.header}>{"🖥 Add Luden on Client"}</h1>
       <div className={styles.contentContainer}>
         <OnboardingClientDocs
           token={

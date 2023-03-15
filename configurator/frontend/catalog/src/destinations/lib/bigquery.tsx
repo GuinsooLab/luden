@@ -44,7 +44,7 @@ const bigQueryDestination: Destination = {
           <b>Pay-as-you go</b>
         </li>
       </ul>
-      Jitsu can{" "}
+      Luden can{" "}
       <a target="_blank" href="https://cloud.google.com/bigquery/streaming-data-into-bigquery">
         stream
       </a>{" "}

@@ -96,7 +96,7 @@ const destination: Destination = {
       displayName: "User Recognition",
       documentation: (
         <>
-          Jitsu can retroactively update events from anonymous users with user id after users identification. See{" "}
+          Luden can retroactively update events from anonymous users with user id after users identification. See{" "}
           <a href="https://jitsu.com/docs/other-features/retroactive-user-recognition">Docs</a>.<br />
           User Recognition support for Clickhouse is limited to ReplacingMergeTree and ReplicatedReplacingMergeTree
           engine.

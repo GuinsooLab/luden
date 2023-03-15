@@ -37,7 +37,7 @@ const icon = (
 const amplitudeDestination: Destination = {
   description: (
     <>
-      Jitsu can send events from JS SDK or Events API to{" "}
+      Luden can send events from JS SDK or Events API to{" "}
       <a target="_blank" href="https://developers.amplitude.com/docs/http-api-v2>">
         Amplitude API
       </a>

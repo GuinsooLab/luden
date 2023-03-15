@@ -1,0 +1,25 @@
+server:
+  allowed_domains:
+    - 'localhost'
+  name: jitsu
+  auth: 'demo___please_provide_value_in_production___'
+
+storage:
+  redis:
+    host: 'localhost'
+    port: 6379
+
+jitsu:
+  server_public_url: ''
+  base_url: 'http://localhost:8001'
+  admin_token: 'demo___please_provide_value_in_production___'
+
+auth:
+  redis:
+    host: 'localhost'
+    port: 6379
+    access_secret: 'demo___please_provide_value_in_production___'
+    refresh_secret: 'demo___please_provide_value_in_production___'
+
+ui:
+  base_url: /configurator

@@ -31,7 +31,7 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "JavaScript (NPM)",
-    link: "https://jitsu.com/docs/sending-data/js-sdk/package",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   jsEmbedded: {
     icon: (
@@ -41,7 +41,7 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "HTML Snippet",
-    link: "https://jitsu.com/docs/sending-data/js-sdk/snippet",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   api: {
     icon: (
@@ -51,12 +51,12 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "Backend APIs",
-    link: "https://jitsu.com/docs/sending-data/api",
+    link: "https://ciusji.gitbook.io/luden/sending-data/event-api",
   },
   react: {
     icon: reactIcon,
     name: "React",
-    link: "https://jitsu.com/docs/sending-data/js-sdk/react",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   nextJs: {
     icon: (
@@ -72,7 +72,7 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "NextJS",
-    link: "https://jitsu.com/docs/sending-data/js-sdk/next",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   nuxt: {
     icon: (
@@ -94,7 +94,7 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "Nuxt",
-    link: "https://jitsu.com/docs/sending-data/js-sdk/nuxt",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   angular: {
     icon: (
@@ -104,7 +104,7 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "Angular",
-    link: "https://jitsu.com/docs/sending-data/js-sdk/angular",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   iOS: {
     icon: (
@@ -113,7 +113,7 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "iOS",
-    link: "https://jitsu.com/docs/sending-data/mobile-apps/ios-sdk",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
   },
   android: {
     icon: (
@@ -133,13 +133,13 @@ export const jitsuClientLibraries: Record<string, JitsuLibProps> = {
       </svg>
     ),
     name: "Andriod",
-    link: "https://jitsu.com/docs/sending-data/mobile-apps/android-sdk",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
     comingSoon: true,
   },
   reactNative: {
     icon: reactIcon,
     name: "React Native",
-    link: "https://jitsu.com/docs/sending-data/mobile-apps/react-native-sdk",
+    link: "https://ciusji.gitbook.io/luden/sending-data/js-sdk",
     comingSoon: true,
   },
 }

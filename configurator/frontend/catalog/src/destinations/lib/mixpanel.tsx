@@ -14,7 +14,7 @@ const icon = (
 const mixpanelDestination: Destination = {
   description: (
     <>
-      Jitsu can send events from JS SDK or Events API to Mixpanel Ingestion API filling as much Mixpanel Events
+      Luden can send events from JS SDK or Events API to Mixpanel Ingestion API filling as much Mixpanel Events
       Properties as possible from original event data.
       <br />
       Implementation is based on npm-package:
@@ -74,7 +74,7 @@ const mixpanelDestination: Destination = {
           <br />
           Source code on{" "}
           <a target={"_blank"} href={"https://github.com/jitsucom/jitsu-mixpanel"}>
-            Jitsu Github
+            Luden Github
           </a>
         </span>
       ),

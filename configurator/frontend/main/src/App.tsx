@@ -179,7 +179,7 @@ export const Application: React.FC = function () {
         if (isAppOutdated) {
           actionNotification.warn(
               <>
-                New version of Jitsu available! Please reload the page to get the latest update.
+                New version of Luden available! Please reload the page to get the latest update.
                 <br/>
                 <Button
                     className="mt-5 mb-2"
@@ -245,25 +245,25 @@ export const Application: React.FC = function () {
                 key="login"
                 path="/login-link/:emailEncoded?"
                 exact
-                render={pageOf(LoginLink, { pageTitle: "Jitsu: Sign In with magic link" })}
+                render={pageOf(LoginLink, { pageTitle: "Luden: Sign In with magic link" })}
               />
               <Route
                 key="signin"
                 path={["/", "/dashboard", "/login", "/signin"]}
                 exact
-                render={pageOf(LoginPage, { pageTitle: "Jitsu: Sign In" })}
+                render={pageOf(LoginPage, { pageTitle: "Luden: Sign In" })}
               />
               <Route
                 key="signup"
                 path={["/register", "/signup"]}
                 exact
-                render={pageOf(SignupPage, { pageTitle: "Jitsu: Sign Up" })}
+                render={pageOf(SignupPage, { pageTitle: "Luden: Sign Up" })}
               />
               <Route
                 key="reset"
                 path={["/reset_password/:resetId"]}
                 exact
-                render={pageOf(ChangePasswordOnResetForm, { pageTitle: "Jitsu: Reset Password" })}
+                render={pageOf(ChangePasswordOnResetForm, { pageTitle: "Luden: Reset Password" })}
               />
               <Route
                   key="sso_callback"
@@ -292,7 +292,7 @@ export const Application: React.FC = function () {
                 <div className="w-1/2">
                   <NavLink to="/">
                     <Button size="large" type="primary">
-                      ← Back to Jitsu
+                      ← Back to Luden
                     </Button>
                   </NavLink>
 
@@ -361,9 +361,9 @@ const RouteNotFound: React.FC = () => {
         <Card.Meta
           description={
             <>
-              This page does not exist. If you got here by clicking a link within Jitsu interface, try to contact us:{" "}
+              This page does not exist. If you got here by clicking a link within Luden interface, try to contact us:{" "}
               <Typography.Paragraph copyable={{ tooltips: false }} className="inline">
-                {"support@jitsu.com"}
+                {"guinsoolab@gmail.com"}
               </Typography.Paragraph>
             </>
           }
@@ -390,7 +390,7 @@ const PageWrapper: React.FC<{ pageTitle: string; component: ComponentType; pageP
     services.analyticsService.onPageLoad({
       pagePath: pagePath,
     })
-    document["title"] = `Jitsu: ${pageTitle}`
+    document["title"] = `${pageTitle} - Luden`
     currentPageHeaderStore.setBreadcrumbs(pageTitle)
   }, [])
   const Component = component as ExoticComponent

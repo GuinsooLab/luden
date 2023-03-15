@@ -72,8 +72,12 @@ require (
 	github.com/form3tech-oss/jwt-go v3.2.5+incompatible // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.0 // indirect
+	github.com/getkin/kin-openapi v0.94.0 // indirect
+	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-ole/go-ole v1.2.5 // indirect
+	github.com/go-openapi/jsonpointer v0.19.5 // indirect
+	github.com/go-openapi/swag v0.21.1 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/go-redsync/redsync/v4 v4.5.0 // indirect
@@ -102,14 +106,19 @@ require (
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/joomcode/errorx v1.1.0 // indirect
+	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/asmfmt v1.3.2 // indirect
 	github.com/klauspost/compress v1.15.9 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
+	github.com/labstack/echo/v4 v4.7.2 // indirect
+	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
+	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mailru/go-clickhouse v1.8.0 // indirect
+	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-ieproxy v0.0.1 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
@@ -151,6 +160,8 @@ require (
 	github.com/tklauser/numcpus v0.3.0 // indirect
 	github.com/ua-parser/uap-go v0.0.0-20211112212520-00c877edfe0f // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasttemplate v1.2.1 // indirect
 	github.com/xitongsys/parquet-go v1.6.1 // indirect
 	github.com/xitongsys/parquet-go-source v0.0.0-20211010230925-397910c5e371 // indirect
 	github.com/zeebo/xxh3 v1.0.2 // indirect

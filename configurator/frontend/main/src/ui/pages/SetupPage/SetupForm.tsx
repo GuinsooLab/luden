@@ -103,7 +103,7 @@ export default function SetupForm() {
               <div className="text-center">
                 <img src={fullLogo} className="h-16" />
               </div>
-              <h3 className="text-center mt-12 text-3xl">Welcome to Jitsu!</h3>
+              <h3 className="text-center mt-12 text-3xl">Welcome to Luden!</h3>
               <div className="text-center pt-12">
                 <Button
                   size="large"

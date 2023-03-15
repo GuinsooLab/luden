@@ -20,7 +20,7 @@ const icon = (
 const googleAnalytics: Destination = {
   description: (
     <>
-      Jitsu can send events from JS SDK or Events API to Google Analytics API. The common use-case is to send
+      Luden can send events from JS SDK or Events API to Google Analytics API. The common use-case is to send
       conversions or/and page views to Google to use that data for targeting and ad optimization
     </>
   ),
