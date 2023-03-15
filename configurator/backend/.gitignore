@@ -10,4 +10,4 @@ temp/
 configurator
 
 build/*
-openapi/*
+openapi/*.go
