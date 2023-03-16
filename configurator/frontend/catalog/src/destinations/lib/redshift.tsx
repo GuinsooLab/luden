@@ -25,8 +25,8 @@ const icon = (
 const destination: Destination = {
   description: (
     <>
-      RedShift is a fast and scalable data warehouse provided by AWS. Jitsu can send data to RedShift in both stream,
-      and batch mode. For batch mode you'll need to provide access to S3 bucket where Jitsu will store temporary data
+      RedShift is a fast and scalable data warehouse provided by AWS. Luden can send data to RedShift in both stream,
+      and batch mode. For batch mode you'll need to provide access to S3 bucket where Luden will store temporary data
       batches.
     </>
   ),

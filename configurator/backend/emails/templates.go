@@ -19,8 +19,8 @@ type templateValues struct {
 }
 
 const (
-	resetPassword  templateSubject = "Reset your password for Jitsu - an open-source data collection platform"
-	accountCreated templateSubject = "Your Jitsu account has been created"
+	resetPassword  templateSubject = "Reset your password for Luden - an open-source data collection platform"
+	accountCreated templateSubject = "Your Luden account has been created"
 )
 
 func parseTemplates() (map[templateSubject]*template.Template, error) {
@@ -41,7 +41,7 @@ var rawTemplates = map[templateSubject]string{
 <html>
 <body>
     <p>Hello,</p>
-	<p>Follow this <a href='{{.Link}}'>link</a> to reset your Jitsu - an open-source data collection platform password for your {{.Email}} account.</p>
+	<p>Follow this <a href='{{.Link}}'>link</a> to reset your Luden - an open-source data collection platform password for your {{.Email}} account.</p>
 	<p>If you didn't ask to reset your password, you can ignore this email.</p>
 	<p>Thanks,</p>
 	<p>{{.Signature}}</p>
@@ -52,7 +52,7 @@ var rawTemplates = map[templateSubject]string{
 <html>
 <body>
 	<p>Hello and welcome!</p>
-	<p>Your new Jitsu {{.Email}} account has been registered. Follow this <a href='{{.Link}}'>link</a> to set the password.</p>
+	<p>Your new Luden {{.Email}} account has been registered. Follow this <a href='{{.Link}}'>link</a> to set the password.</p>
 	<p>If you didn't expect this, you can safely ignore this email.</p>
 	<p>Thanks,</p>
 	<p>{{.Signature}}</p>

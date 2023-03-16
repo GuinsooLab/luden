@@ -222,7 +222,7 @@ export const SourceEditorFormConfigurationConfigurableLoadableFields: React.FC<P
         <Col span={20}>
           <LoadableFieldsLoadingMessageCard
             title="Loading the source configuration"
-            longLoadingMessage="Loading the spec takes longer than usual. This might happen if you are configuring such source for the first time - Jitsu will need some time to pull a docker image with the connector code"
+            longLoadingMessage="Loading the spec takes longer than usual. This might happen if you are configuring such source for the first time - Luden will need some time to pull a docker image with the connector code"
             showLongLoadingMessageAfterMs={5000}
             className={`form-fields-card`}
           />

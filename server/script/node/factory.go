@@ -42,7 +42,7 @@ var (
 )
 
 var errNodeRequired = errors.New(`node and/or npm is not found in $PATH.
-	Jitsu will be functional, however JavaScript Functions won't be available. 
+	Luden will be functional, however JavaScript Functions won't be available. 
 	Please make sure that node (>=16) and npm (>=8) are installed and available. 
 	Or use @jitsucom/* docker images where all necessary packages are pre-installed`)
 

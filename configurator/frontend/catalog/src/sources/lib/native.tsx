@@ -1092,7 +1092,7 @@ export const redis: SourceConnector = {
       required: true,
       documentation: (
         <>
-          Provide a certain Redis key to sync data from or pattern: <b>my_currencies*</b>. Jitsu will search keys by
+          Provide a certain Redis key to sync data from or pattern: <b>my_currencies*</b>. Luden will search keys by
           pattern and sync them.
         </>
       ),
@@ -1144,7 +1144,7 @@ export const redis: SourceConnector = {
         <a target="_blank" href="https://redis.io/commands/zscan">
           sorted set
         </a>{" "}
-        keys. It works with a certain Redis key configuration as well as key pattern. Jitsu uses{" "}
+        keys. It works with a certain Redis key configuration as well as key pattern. Luden uses{" "}
         <a target="_blank" href="https://redis.io/commands/scan">
           scan
         </a>{" "}
@@ -1209,7 +1209,7 @@ export const amplitude: SourceConnector = {
             page
           </li>
           <li>
-            Save API Key and Secret Key value. It is used as API Secret in Jitsu UI. Only Amplitude Admins and Managers
+            Save API Key and Secret Key value. It is used as API Secret in Luden UI. Only Amplitude Admins and Managers
             can view API credentials on Amplitude project settings page.
           </li>
         </ul>

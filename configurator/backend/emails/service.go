@@ -35,7 +35,7 @@ func (sc *SMTPConfiguration) Validate() error {
 	}
 
 	if sc.From == "" {
-		sc.From = "support@jitsu.com"
+		sc.From = "guinsoolab@gmail.com"
 	}
 
 	if sc.Signature == "" {

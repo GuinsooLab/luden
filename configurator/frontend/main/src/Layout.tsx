@@ -246,7 +246,7 @@ export const DropdownMenu: React.FC<{ user: User; plan: CurrentSubscription; hid
 
   return (
     <div>
-      <div className="py-5 border-b px-5 flex flex-col items-center">
+      <div className="py-5 border-b px-5 flex flex-col items-start">
         <div className="text-center text-text text-lg">{user.name}</div>
         <div className="text-secondaryText text-xs underline">{user.email}</div>
       </div>
@@ -266,7 +266,7 @@ export const DropdownMenu: React.FC<{ user: User; plan: CurrentSubscription; hid
               />
             </>
           )}
-          <div className="text-xs flex flex-col items-center">
+          <div className="text-xs flex flex-col items-start">
             <a
               onClick={() => {
                 hideMenu()
