@@ -9,7 +9,7 @@ arch_flag='amd'
 docker_flag='true'
 
 print_usage() {
-  echo "Jitsu Server Building CLI usage:"
+  echo "Luden Server Building CLI usage:"
   echo "./local-build-server.sh --arch [amd, arm] --docker [true, false]"
   echo " "
   echo "options:"
@@ -87,12 +87,12 @@ echo ""
 if [ "$docker_flag" == 'true' ]
 then
   echo ""
-  echo "====================================="
-  echo "= Building jitsucom/server docker.. ="
-  echo "====================================="
+  echo "============================================="
+  echo "= Building guinsoolab/luden-server docker.. ="
+  echo "============================================="
   echo ""
 
-  docker build -t jitsucom/server -f server.Dockerfile --build-arg dhid=jitsucom --build-arg SDK_VERSION=$SDK_VERSION . || { echo 'Building jitsucom/server docker failed' ; exit 1; }
+  docker build -t guinsoolab/luden-server -f server.Dockerfile --build-arg dhid=jitsucom --build-arg SDK_VERSION=$SDK_VERSION . || { echo 'Building guinsoolab/luden-server docker failed' ; exit 1; }
 fi
 
 echo ""

@@ -3,12 +3,11 @@ networks:
   main:
 
 services:
-  jitsu:
-    container_name: jitsu
-    image: jitsucom/jitsu
+  luden:
+    container_name: luden
+    image: guinsoolab/luden
     environment:
       - REDIS_URL=redis://redis:6379
-      #Retroactive users recognition can affect RAM significant. Read more about the solution https://jitsu.com/docs/other-features/retroactive-user-recognition
       - USER_RECOGNITION_ENABLED=true
       - USER_RECOGNITION_REDIS_URL=redis://redis_users_recognition:6380
       - TERM=xterm-256color
@@ -27,7 +26,7 @@ services:
     networks:
       - main
   redis:
-    container_name: jitsu_redis
+    container_name: luden_redis
     image: redis:6.2.6-bullseye
     volumes:
       - ./compose-data/redis/data:/data
@@ -39,7 +38,7 @@ services:
     networks:
       - main
   redis_users_recognition:
-    container_name: jitsu_redis_users_recognition
+    container_name: luden_redis_users_recognition
     image: redis:6.2.6-bullseye
     volumes:
       - ./compose-data/redis_users_recognition/data:/data
@@ -51,4 +50,4 @@ services:
 
 volumes:
   workspace:
-    name: jitsu_workspace
+    name: luden_workspace

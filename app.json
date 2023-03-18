@@ -1,10 +1,10 @@
 {
-  "name": "Jitsu",
-  "description": "Jitsu is a real-time data collection platform.",
+  "name": "Luden",
+  "description": "Luden is a real-time data collection platform.",
   "success_url": "/",
-  "repository": "https://github.com/jitsucom/jitsu",
+  "repository": "https://github.com/GuinsooLab/luden",
   "logo": "https://jitsu.com/img/jitsu-light.svg",
-  "keywords": ["jitsu", "events", "pixel", "golang", "tracking"],
+  "keywords": ["segment", "events", "pixel", "golang", "tracking"],
   "stack": "container",
   "env": {
     "GEO_MAXMIND_PATH": {

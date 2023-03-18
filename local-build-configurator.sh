@@ -8,7 +8,7 @@ arch_flag='amd'
 docker_flag='true'
 
 print_usage() {
-  echo "Jitsu Configurator Building CLI usage:"
+  echo "Luden Configurator Building CLI usage:"
   echo "./local-build-configurator.sh --arch [amd, arm] --docker [true, false]"
   echo " "
   echo "options:"
@@ -87,12 +87,12 @@ echo ""
 if [ "$docker_flag" == 'true' ]
 then
   echo ""
-  echo "============================================"
-  echo "= Building jitsucom/configurator docker... ="
-  echo "============================================"
+  echo "===================================================="
+  echo "= Building guinsoolab/luden-configurator docker... ="
+  echo "===================================================="
   echo ""
 
-  docker build -t jitsucom/configurator -f configurator-release.Dockerfile --build-arg dhid=jitsucom . || { echo 'Building jitsucom/configurator docker failed' ; exit 1; }
+  docker build -t guinsoolab/luden-configurator -f configurator-release.Dockerfile --build-arg dhid=jitsucom . || { echo 'Building guinsoolab/luden-configurator docker failed' ; exit 1; }
 fi
 
 echo ""

@@ -19,7 +19,7 @@ jobs:
           paths:
             - "/go/pkg/mod"
   server-test:
-    working_directory: /go/src/github.com/jitsucom/jitsu/server
+    working_directory: /go/src/github.com/GuinsooLab/luden/server
     docker:
       - image: circleci/golang:1.16
       - image: yandex/clickhouse-server:20.3

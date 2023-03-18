@@ -100,7 +100,7 @@ sleep 1
 check_shutdown
 
 echo "=============================================================================="
-echo "                           🌪 Jitsu has started!"
+echo "                           🌪 Luden has started!"
 echo "             💻 visit http://localhost:$NGINX_PORT_VALUE/configurator"
 echo "=============================================================================="
 

@@ -44,9 +44,9 @@ RUN ln -s /home/$EVENTNATIVE_USER/data/config /home/$EVENTNATIVE_USER/app/res &&
     ln -s /home/$EVENTNATIVE_USER/data/logs /home/$EVENTNATIVE_USER/logs && \
     chown -R $EVENTNATIVE_USER:$EVENTNATIVE_USER /home/$EVENTNATIVE_USER/logs
 #######################################
-FROM jitsucom/server:${SRC_VERSION} as server
+FROM guinsoolab/luden-server:${SRC_VERSION} as server
 #######################################
-FROM jitsucom/configurator:${SRC_VERSION} as configurator
+FROM guinsoolab/luden-configurator:${SRC_VERSION} as configurator
 #######################################
 # FINAL STAGE
 FROM main as final
