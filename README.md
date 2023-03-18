@@ -15,6 +15,8 @@
 * Capture events your application generates and stream to Data Warehouse;
 * Pull data from APIs and save it to Data Warehouse
 
+![luden-here](https://raw.githubusercontent.com/GuinsooLab/luden/main/design-docs/luden-here.png)
+
 Read more about [our features](https://ciusji.gitbook.io/luden/features) and check out the [platform overview](https://guinsoolab.github.io/glab/)!
 
 ## Quickstart

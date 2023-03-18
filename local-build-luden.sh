@@ -4,7 +4,7 @@ only_jitsu_flag='false'
 
 print_usage() {
   echo "Jitsu Building CLI usage:"
-  echo "./local-build-jitsu.sh --only_jitsu [true, false]"
+  echo "./local-build-luden.sh --only_jitsu [true, false]"
   echo " "
   echo "options:"
   echo "-h, --help                show brief help"
